@@ -1,6 +1,6 @@
 # MechaCar_Statistical_Analysis
 
-## Linear Regression to Predict MPG 
+## Linear Regression to Predict MPG:
 
 ![Summary 1](https://user-images.githubusercontent.com/96403349/163402180-632abcf5-40bb-4b55-8421-409f4042edbd.png)
 
@@ -10,3 +10,45 @@
 
 3) This linear model predicts the mpg of MechaCar protoypes effectively because the Adjusted R-squared reflects that 0.7149, which means that approximately 71% of the variation within mpg is explained by the coefficients.
 
+## Summary Statistics on Suspension Coils:
+
+The Suspension Coil dataset provided for the MechaCar contains the results show that the variance of the suspension coils is 62.29 which must not exceed 100 pounds per square inch (PSI) when we looking the entire pouplation of the production lot. However, lot summary shows that Lot 1 and Lot 2 are well within the 100 PSI variance requirement with variances of 0.98 and 7.47 respectively. On the other side, lot 3 does not meet the design specifications as its variance is 170.29 which much over the 100 PSI limit. 
+
+### Total Summary
+
+![total summary](https://user-images.githubusercontent.com/96403349/163448033-4b510b37-04fb-41cd-9d43-6c6be1ae8b68.png)
+
+### Lot Summary
+
+![lot-summary](https://user-images.githubusercontent.com/96403349/163448518-e9df811f-062e-47b8-94b8-f410e7df2570.png)
+
+
+## T-Tests on Suspension Coils:
+
+Perform t-tests to determine if all manufacturing lots and each lot individually are statistically different from the population mean of 1,500 pounds per square inch.
+The results of the t-tests OF all lots and each individual lot are below.
+
+### Overall T-Test on Suspension coils
+
+![2022-04-14 (7)](https://user-images.githubusercontent.com/96403349/163449562-620099d2-5c83-4f4a-a42e-a5f441cdaabf.png)
+
+From above image we can say that the Mean of the sample is 1498.78. And the p-value is 0.06 which is higher than the significance level of 0.05, so the null hypothesis can be accepted in that there is no difference between the means of the PSI for the population and overall manufacturing lot sample. We can say that,the mean of all three of these manufacturing lots is similar to the presumed popultion mean of 1500.
+
+### Lot1 Suspension Coil T-Test
+
+![t test lot1](https://user-images.githubusercontent.com/96403349/163451128-f34ce2e2-426c-437e-a460-81ee93d448c0.png)
+
+Lot1 sample has the sample mean of 1500 with the p-value is 1. That means we cannot reject or accept the null hypothesis because there is no diference between the observed sample mean and the presumed population mean of 1500.
+
+
+### Lot2 Suspension Coil T-Test
+
+![t test lot2](https://user-images.githubusercontent.com/96403349/163451838-259a2ce2-261d-4360-8bd7-d1e96959c606.png)
+
+As lot1, lot2 has the sample mean of 1500 with the p-value is 0.06. That means the null hypothesis cannot be rejected, and the sample mean and the population mean of 1500 are statistically similar.
+
+### Lot3 Suspension Coil T-Test
+
+![t test lot3](https://user-images.githubusercontent.com/96403349/163452855-d9f51901-0b2d-481c-9919-e52d71d88171.png)
+
+Lot3 sample has the mean is 1496.14 and the p-Value is 0.04, which is lower than the common significance level of 0.05. And null hypothesis should be rejected in that there is a difference between the means of the PSI for the population and Lot3 and the true mean is not equal to 1500.
