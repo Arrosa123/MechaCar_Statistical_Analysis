@@ -1,5 +1,16 @@
 # MechaCar_Statistical_Analysis
 
+## Project Overview:
+
+ AutosRUs’ newest prototype, the MechaCar, is suffering from production troubles that are blocking the manufacturing team’s progress. AutosRUs’ upper management has hired the new employee (Jeremy) and the data analytics team to review the production data for insights that may help the manufacturing team.
+
+In this challenge, Jermy and the data analytics team do the following:
+
+1) Perform multiple linear regression analysis to identify which variables in the dataset predict the mpg of MechaCar prototypes
+2) Collect summary statistics on the pounds per square inch (PSI) of the suspension coils from the manufacturing lots
+3) Run t-tests to determine if the manufacturing lots are statistically different from the mean population
+4) Design a statistical study to compare vehicle performance of the MechaCar vehicles against vehicles from other manufacturers. For each statistical analysis, write a summary interpretation of the findings.
+
 ## Linear Regression to Predict MPG:
 
 ![Summary 1](https://user-images.githubusercontent.com/96403349/163402180-632abcf5-40bb-4b55-8421-409f4042edbd.png)
@@ -52,3 +63,10 @@ As lot1, lot2 has the sample mean of 1500 with the p-value is 0.06. That means t
 ![t test lot3](https://user-images.githubusercontent.com/96403349/163452855-d9f51901-0b2d-481c-9919-e52d71d88171.png)
 
 Lot3 sample has the mean is 1496.14 and the p-Value is 0.04, which is lower than the common significance level of 0.05. And null hypothesis should be rejected in that there is a difference between the means of the PSI for the population and Lot3 and the true mean is not equal to 1500.
+
+## Study Design: MechaCar vs Competition:
+
+- Design a statistical study to compare performance of the MechaCar vehicles against performance of vehicles from other manufacturers. This study would involve collecting data on MechaCar and its comparable models across several different manufacturers over the last 3 years. To quantify how the MechaCar performs against the competition, the T-Test could be used to compare the safety ratings of MechaCar against the competition. And the next metrics should be the cost, city or highway fuel efficiency, horse power, or maintenance cost which address some safety concerns of consumers.
+- The null hypothesis is that there is no difference in safety ratings between MechaCar and the competition which that means the mean of the safety rating is zero. The alternative hypothesis is that there is a difference in the safety ratings between those two groups because the mean of the safety rating is not zero.
+- A multiple linear regression would be helpful to determine the statistical summary how the variables impact the safety ratings for MechaCar and their competitors.
+- More random sample would need to be collected including actual variables, safety ratings, highway fuel efficiency, and horsepower and further analysis could be done by using the results from the t-test through RStudio.
